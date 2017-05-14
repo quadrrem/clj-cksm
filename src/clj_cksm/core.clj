@@ -28,7 +28,7 @@
           (println (str "Expected checksum " expected))
           (println (str "but was " calculated))))))
 
-(defn- checksum [file format cks]
+(defn checksum [file format cks]
   (-> file
       (slurp-file)
       (digest format)
