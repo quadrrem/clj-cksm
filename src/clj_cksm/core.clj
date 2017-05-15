@@ -1,4 +1,5 @@
-(ns clj-cksm.core)
+(ns clj-cksm.core
+  (:gen-class))
 
 (defn slurp-file 
   "Reads a file into a byte array"
